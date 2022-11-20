@@ -1,101 +1,156 @@
+ <!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/outredportfolio/outredportfolio.github.io/main/favicon.png">
-   <!--this loads external CSS styles -->
-        <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
-        
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+body {
+  margin: 0;
+  font-family: "Asap", sans-serif;
+  text-align: center;
+  background-color: #e0ffff;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+  border-radius: 15px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+  
+  button {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 4px solid black;
+    transition: 0.3s;
+    background-color: #359738;
+    font-family: "Asap", sans-serif;
+  }
+  
+  footer {
+    background-color: #333;
+    font-family: "Asap", sans-serif;
+    color: white;
+    padding: 10px;    
+  }
+  
+  button:hover {
+    opacity: 0.5;
+  }
+  
+  .id {
+    color: #e0ffff;
+  }
+  
+  img {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+  
+  .html {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    height: 15%;
+    position: absolute;
+}
+
+  .css {
+    width: 11%;
+    height: 15%;
+    float: right;
+  }
+</style>
 </head>
+<body>
+
+<div id="navbar">
+  <a class="active" href="#home">Home</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#about">About</a>
+</div>
+  <section>
+    <img class="html" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" height="200px" width="200px"/>
+    <img class="css" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"/>
+    <h1>R. Fesko</h1>
+    <p>Web developer and progammer.</p>
+    <h1>About</h1>
+    <p>I am a teen who first discovered HTML and CSS and GitHub when making a game website for some kids. Ever since then, I have continued so far in the coding world finding it more interesting than ever. I keep finding better ways to improve my site, and better ways to improve my knowledge.</p>
+  </section>
+  
+  <section>
+<h1>Projects</h1>
+    
+  </section>
+  <div>
+    <a class="id" id="projects">Projects</a>
+  
+  </div>
+  
+  <footer>
+      <form action="#home">
+  <button class="button">Back to Top ↑</button>
+    </form>
+<p>© R. Fesko Portfolio, 2022. Unauthorized use and/or duplication of this material without permission from R. Fesko is strictly prohibited. Please contact OutRed at his Discord OutRed#0267 for information.</p>
+  </footer>
+  <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
 </html>
-
-<html>
-  <title>R. Fesko Portfolio</title>
-<section>
-  <h1>Scroll Down to Reveal Elements &#8595;</h1>
-</section>
-<section>
-  <div class="container reveal fade-bottom">
-    <h2>Caption</h2>
-    <div class="text-container">
-      <div class="text-box">
-        <h3>Section Text</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          eius molestiae perferendis eos provident vitae iste.
-        </p>
-      </div>
-      <div class="text-box">
-        <h3>Section Text</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          eius molestiae perferendis eos provident vitae iste.
-        </p>
-      </div>
-      <div class="text-box">
-        <h3>Section Text</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          eius molestiae perferendis eos provident vitae iste.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container reveal fade-left">
-    <h2>Caption</h2>
-    <div class="text-container">
-      <div class="text-box">
-        <h3>Section Text</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          eius molestiae perferendis eos provident vitae iste.
-        </p>
-      </div>
-      <div class="text-box">
-        <h3>Section Text</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          eius molestiae perferendis eos provident vitae iste.
-        </p>
-      </div>
-      <div class="text-box">
-        <h3>Section Text</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          eius molestiae perferendis eos provident vitae iste.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container reveal fade-right">
-    <h2>Caption</h2>
-    <div class="text-container">
-      <div class="text-box">
-        <h3>Section Text</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          eius molestiae perferendis eos provident vitae iste.
-        </p>
-      </div>
-      <div class="text-box">
-        <h3>Section Text</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          eius molestiae perferendis eos provident vitae iste.
-        </p>
-      </div>
-      <div class="text-box">
-        <h3>Section Text</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-          eius molestiae perferendis eos provident vitae iste.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
