@@ -51,7 +51,7 @@ body {
   padding-top: 60px;
 }
   
-  button {
+  .topbutton {
     padding: 10px;
     font-size: 18px;
     border-radius: 10px;
@@ -61,6 +61,24 @@ body {
     font-family: "Asap", sans-serif;
   }
   
+  button {
+    display: block;
+    text-align: center;
+    font-family: "Asap", sans-serif;
+    margin: 10;
+    padding: 10px;
+    border-radius: 12px;
+    border: 5px solid #0047AB;
+    font-size: 30px;
+    background-color: #0096FF;
+    transition: 0.2s;
+  }
+  
+  button:hover {
+     transform: scale(1.2);
+
+  }
+  
   footer {
     background-color: #333;
     font-family: "Asap", sans-serif;
@@ -68,7 +86,7 @@ body {
     padding: 10px;    
   }
   
-  button:hover {
+  .topbutton:hover {
     opacity: 0.5;
   }
   
@@ -109,33 +127,37 @@ body {
 
 <div id="navbar">
   <a class="active" href="#home">Home</a>
-  <a href="#projects">Projects</a>
-  <a href="#skills">Skills</a>
-  <a href="#about">About</a>
+  <a href="/contact">Contact</a>
+  <a href="#">Discord Server</a>
 </div>
-  <section>
-    <img class="html" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" height="200px" width="200px"/>
-    <img class="css" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"/>
-    <h1>R. Fesko</h1>
-    <p>Web developer and progammer.</p>
-    <h1>About</h1>
-    <p>I am a teen who first discovered HTML and CSS and GitHub when making a game website for some kids. Ever since then, I have continued so far in the coding world finding it more interesting than ever. I keep finding better ways to improve my site, and better ways to improve my knowledge.</p>
-  </section>
-  
-  <section>
-<h1>Projects</h1>
-    
-  </section>
+  <div class="start">
+<h1>Hello, I'm R. Fesko!</h1>
+    <h3>Web developer and programmer</h3>
+  </div>
+  <div class="options">
+    <form action="/skills">
+      <center><button>Skills</button></center>
+      </form>
+    <form action="/experience">
+       <center><button>Experience</button></center>
+    </form>
+    <form action="/projects">
+    <center><button>Projects</button></center>
+    </form>
+    <form action="/socials">
+       <center><button>Socials</button></center>
+    </form>
+  </div>
+
   <div>
-    <a class="id" id="projects">Projects</a>
-  
+    <a class="id" id="projects">Congratulations! You found a secret in my website! Shhh!</a>
   </div>
   
   <footer>
       <form action="#home">
-  <button class="button">Back to Top ↑</button>
+        <center><button class="topbutton">Back to Top ↑</button></center>
     </form>
-<p>© R. Fesko Portfolio, 2022. Unauthorized use and/or duplication of this material without permission from R. Fesko is strictly prohibited. Please contact OutRed at his Discord OutRed#0267 for information.</p>
+    <p>For additional information, please contact him at his Discord: OutRed#0267. DM's are always open.</p>
   </footer>
   <script>
 window.onscroll = function() {myFunction()};
