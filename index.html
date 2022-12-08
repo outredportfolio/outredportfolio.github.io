@@ -1,178 +1,26 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  @import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
-body {
-  margin: 0;
-  font-family: "Asap", sans-serif;
-  text-align: center;
-  background-color: #e0ffff;
-}
-
-#navbar {
-  overflow: hidden;
-  background-color: #333;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  transition: 0.3s;
-  border-radius: 15px;
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-#navbar a.active {
-  background-color: #04AA6D;
-  color: white;
-  border-radius: 15px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-  
-  .topbutton {
-    padding: 10px;
-    font-size: 18px;
-    border-radius: 10px;
-    border: 4px solid black;
-    transition: 0.3s;
-    background-color: #359738;
-    font-family: "Asap", sans-serif;
-  }
-  
-  button {
-    display: block;
-    text-align: center;
-    font-family: "Asap", sans-serif;
-    margin: 10;
-    padding: 10px;
-    border-radius: 12px;
-    border: 5px solid #0047AB;
-    font-size: 30px;
-    background-color: #0096FF;
-    transition: 0.2s;
-  }
-  
-  button:hover {
-     transform: scale(1.2);
-
-  }
-  
-  footer {
-    background-color: #333;
-    font-family: "Asap", sans-serif;
-    color: white;
-    padding: 10px;    
-  }
-  
-  .topbutton:hover {
-    opacity: 0.5;
-  }
-  
-  .id {
-    color: #e0ffff;
-  }
-  
-  img {
-    -webkit-animation: mover 2s infinite  alternate;
-    animation: mover 2s infinite  alternate;
-}
-@-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
-}
-@keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
-}
-  
-  .html {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15%;
-    height: 15%;
-    position: absolute;
-}
-
-  .css {
-    width: 11%;
-    height: 15%;
-    float: right;
-  }
-</style>
-</head>
-<body>
-
-<div id="navbar">
-  <a class="active" href="#home">Home</a>
-  <a href="/contact">Contact</a>
-  <a href="#">Discord Server</a>
-</div>
-  <div class="start">
-<h1>Hello, I'm R. Fesko!</h1>
-    <h3>Web developer and programmer</h3>
-  </div>
-  <div class="options">
-    <form action="/skills">
-      <center><button>Skills</button></center>
-      </form>
-    <form action="/experience">
-       <center><button>Experience</button></center>
-    </form>
-    <form action="/projects">
-    <center><button>Projects</button></center>
-    </form>
-    <form action="/socials">
-       <center><button>Socials</button></center>
-    </form>
-  </div>
-
-  <div>
-    <a class="id" id="projects">Congratulations! You found a secret in my website! Shhh!</a>
-  </div>
-  
-  <footer>
-      <form action="#home">
-        <center><button class="topbutton">Back to Top ↑</button></center>
-    </form>
-    <p>For additional information, please contact him at his Discord: OutRed#0267. DM's are always open.</p>
-  </footer>
-  <script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-
-</body>
+  <head>
+<title>Site Under Construction</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: black;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: white;
+      }
+      
+      a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text">
+      <h1>Website Currently Under Construction</h1>
+<img src="https://www.freeiconspng.com/uploads/orange-error-icon-0.png" width="350"/>
+      <h2>For more details, please detail OutRed at his Discord: OutRed#0267</h2>
+      <h3>Website coded by <a href="https://github.com/OutRed">OutRed</a>. Please <a href="https://discord.gg/keFMTXbhEA">contact him</a> to get your own website for cheap!</h3>
+    </div>
+  </body>
 </html>
