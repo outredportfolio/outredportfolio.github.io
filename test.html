@@ -1,0 +1,219 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+body {
+  margin: 0;
+  font-family: "Asap", sans-serif;
+  text-align: center;
+  background-color: #e0ffff;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+  border-radius: 15px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+  
+  .topbutton {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 4px solid black;
+    transition: 0.3s;
+    background-color: #359738;
+    font-family: "Asap", sans-serif;
+  }
+  
+  button {
+    display: block;
+    text-align: center;
+    font-family: "Asap", sans-serif;
+    margin: 10;
+    padding: 10px;
+    border-radius: 12px;
+    border: 5px solid #0047AB;
+    font-size: 30px;
+    background-color: #0096FF;
+    transition: 0.2s;
+    font-weight: bold;
+  }
+  
+  button:hover {
+     transform: scale(1.2);
+    background-color: #89CFF0;
+  }
+  
+  footer {
+    background-color: #333;
+    font-family: "Asap", sans-serif;
+    color: white;
+    padding: 10px;    
+  }
+  
+  .topbutton:hover {
+    opacity: 0.5;
+  }
+  
+  a {
+    color: 	#0047AB;
+    text-decoration: none;
+  }
+  
+  .fa {
+  padding: 20px;
+  font-size: 60px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+    background-color: black;
+    color:white;
+    height: 50px;
+    width: 50px;
+}
+  
+  img {
+    height: 50px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    transition: 0.3s;
+  }
+  
+  img:hover {
+    opacity: 0.5;
+  }
+  
+  .about {
+    background-color: #6495ED;
+    padding: 2%;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .animate-charcter
+{
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 30px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+  
+  .name {
+    font-size: 25px
+  }
+</style>
+</head>
+<body>
+<div id="navbar">
+  <a class="active" href="#home">Home</a>
+  <a href="/contact">Contact</a>
+  <a href="#">Discord Server</a>
+</div>
+  <section id="choosing">
+  <div class="name">
+<h1>R. Fesko</h1>
+    <h3>Front-End Developer</h3>
+  </div>
+  <div class="options">
+    <form action="#skills">
+      <center><button>Skills</button></center>
+      </form>
+    <form action="/experience">
+       <center><button>Experience</button></center>
+    </form>
+    <form action="/projects">
+    <center><button>Projects</button></center>
+    </form>
+    <form action="/socials">
+       <center><button>Socials</button></center>
+    </form>
+    <div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3 class="animate-charcter">Scroll Down ↓</h3>
+    </div>
+  </div>
+</div>
+  </div>
+  </section>
+  <section class="about">
+  <div>
+<h1>About Me</h1>
+    <h3>I became intested in coding all the way back when I made a <a href="https://outred.github.io">game website</a> for some kids using GitHub Pages. Ever since I made that, I have become more curious. As I kept on working on my <a href="https://outred.github.io">game website</a>, I started to learn more. Without that, I would never be where I am today.</h3>
+    <h3>As of today, I am learning Python.My goal for the end of the year (2022) is to know Python.   After I learn that, I plan to probably learn Javascript. I am very new to Python, and only written a couple useful programs.</h3>
+  </div>
+  <div>
+  </div>
+  </section>
+  <footer>
+      <form action="#choosing">
+        <center><button class="topbutton">Back to Top ↑</button></center>
+    </form>
+    <p>For additional information, please contact him at his Discord: OutRed#0267. DM's are always open.</p>
+    <div class="socials">
+    <a href="mailto:rfesko5@gmail.com"><img src="https://img.icons8.com/ios-filled/500/apple-mail.png"></a>
+    <a href="https://github.com/OutRed"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></a>
+    </div>
+  </footer>
+</body>
+</html>
