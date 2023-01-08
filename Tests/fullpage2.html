@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Fullpage.js Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullpage.js/3.0.8/fullpage.css" />
+    <style>
+      /* Add custom styles for each section here */
+      .section1 {
+        background-color: #f44336;
+      }
+      .section2 {
+        background-color: #4caf50;
+      }
+      .section3 {
+        background-color: #9c27b0;
+      }
+      .section4 {
+        background-color: #2196f3;
+      }
+
+      /* Style the section indicator */
+      #section-indicator {
+        position: fixed;
+        right: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      #section-indicator li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      #section-indicator li.active {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section section1">
+        <!-- Add content for section 1 here -->
+      </div>
+      <div class="section section2">
+        <!-- Add content for section 2 here -->
+      </div>
+      <div class="section section3">
+        <!-- Add content for section 3 here -->
+      </div>
+      <div class="section section4">
+        <!-- Add content for section 4 here -->
+      </div>
+    </div>
+
+    <!-- Section indicator -->
+    <ul id="section-indicator">
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <!-- Fullpage.js script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullpage.js/3.0.8/fullpage.js"></script>
+    <script>
+      // Initialize fullpage.js
+      new fullpage('#fullpage', {
+        // Add options here
+        onLeave: function(origin, destination, direction) {
+          // Update the active class on the section indicator
+          var sectionIndicator = document.getElementById('section-indicator');
+          var children = sectionIndicator.children;
+          for (var i = 0; i < children.length; i++) {
+            children[i].classList.remove('active');
+          }
+          children[destination.index].classList.add('active');
+        }
+      });
+    </script>
+  </body>
+</html>
