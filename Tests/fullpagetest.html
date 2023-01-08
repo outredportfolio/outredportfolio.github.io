@@ -17,18 +17,18 @@
         background-color: #2196f3;
       }
 
-      /* Style the section indicator */
-      #section-indicator {
+      /* Style the page indicator */
+      #page-indicator {
         position: fixed;
         right: 50px;
         top: 50%;
         transform: translateY(-50%);
       }
-      #section-indicator li {
+      #page-indicator li {
         display: inline-block;
         margin: 0 10px;
       }
-      #section-indicator li.active {
+      #page-indicator li.active {
         color: #fff;
       }
     </style>
@@ -49,8 +49,8 @@
       </div>
     </div>
 
-    <!-- Section indicator -->
-    <ul id="section-indicator">
+    <!-- Page indicator -->
+    <ul id="page-indicator">
       <li class="active"></li>
       <li></li>
       <li></li>
@@ -64,9 +64,9 @@
       new fullpage('#fullpage', {
         // Add options here
         onLeave: function(origin, destination, direction) {
-          // Update the active class on the section indicator
-          var sectionIndicator = document.getElementById('section-indicator');
-          var children = sectionIndicator.children;
+          // Update the active class on the page indicator
+          var pageIndicator = document.getElementById('page-indicator');
+          var children = pageIndicator.children;
           for (var i = 0; i < children.length; i++) {
             children[i].classList.remove('active');
           }
